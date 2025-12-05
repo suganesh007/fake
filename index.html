@@ -95,20 +95,30 @@
 </script>
 
 <script>
-$zoho.salesiq.ready = function() {
+    // SalesIQ installation code
+$zoho.salesiq.ready(function() {
     $zoho.salesiq.set("home.widgets", [
+  // List of widgets to be shown
         {
-            type: "news",
-            banner: {  
-                type: "image",
-                url: "https://previewengine-accl.zohoexternal.com/image/BACKSTAGE/912000271967525?cli-msg=eyJtb2R1bGUiOiJFdmVudEltYWdlUmVzb3VyY2UiLCJ0eXBlIjowLCJwb3J0YWxJZCI6IjY1MDczMzk2MSIsInN1YlJlc291cmNlSWQiOiI2NTA3MzM5NjEiLCJpZCI6IjkxMjAwMDI3MTk2NzUyNSJ9",
-                image_position: "fit"
-            },
-            title: "Join us at Zoholics: We'll talk tech and drink great coffee",
-            text: "We're bringing you product updates, one-on-one support sessions, and extensive networking opportunities with Zoho customers and partners. Fuelled by your feedback, we've worked to ensure that this year's Zoholics has something valuable for everyone!"
-        }
-    ]);
-};
+"type"  : "announcement",
+"banner": {  
+   "type": "video",
+   "thumbnail": "https://images.teepublic.com/derived/production/designs/1801962_0/1502184531/i_m:pid_477,c_144_76_1108x1108,bc_191919,ar_1x1,o_portrait,pm_4,s_630,q_90.jpg",
+   "url": "https://youtu.be/hAhDBHNwJYQ?si=4swTixISa3bj3BTp",
+   "autoplay": true
+},
+"title": "Stranger Things Week",
+"text": "Friends don't lie. - Eleven",
+"action":
+{
+"type": "link",
+"label": "Go to Upside Down",
+"url": "https://economictimes.indiatimes.com/news/new-updates/google-search-turns-upside-down-for-netflixs-stranger-things/articleshow/125708474.cms?from=mdr"
+}
+            
+} 
+     ]);
+})
 </script>
 
     
