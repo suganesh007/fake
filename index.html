@@ -95,30 +95,25 @@
 </script>
 
 <script>
-    // SalesIQ installation code
-$zoho.salesiq.ready(function() {
+$zoho.salesiq.ready = function () {
     $zoho.salesiq.set("home.widgets", [
-  // List of widgets to be shown
         {
-"type"  : "announcement",
-"banner": {  
-   "type": "video",
-   "thumbnail": "https://images.teepublic.com/derived/production/designs/1801962_0/1502184531/i_m:pid_477,c_144_76_1108x1108,bc_191919,ar_1x1,o_portrait,pm_4,s_630,q_90.jpg",
-   "url": "https://youtu.be/hAhDBHNwJYQ?si=4swTixISa3bj3BTp",
-   "autoplay": true
-},
-"title": "Stranger Things Week",
-"text": "Friends don't lie. - Eleven",
-"action":
-{
-"type": "link",
-"label": "Go to Upside Down",
-"url": "https://economictimes.indiatimes.com/news/new-updates/google-search-turns-upside-down-for-netflixs-stranger-things/articleshow/125708474.cms?from=mdr"
-}
-            
-} 
-     ]);
-})
+            type: "announcement",
+            banner: {
+                type: "image",
+                url: "https://previewengine-accl.zohoexternal.com/image/WD/gkbu53ba12feb59204d558ba0e4440c52d3f1?version=1.0&width=2046&height=1536",
+                image_position: "fit"
+            },
+            title: "Lead Nurturing 101: Free Training",
+            text: "All Zoho users in the region are welcome to join the meetup! Zoho One subscribers will gain the most insights. Zoho CRM and other stand-alone app users will discover how Zoho’s full suite can boost their business success.",
+            action: {
+                type: "link",
+                label: "Register Now",
+                url: "https://www.zoho.com/zoholics/"
+            }
+        }
+    ]);
+};
 </script>
 
     
